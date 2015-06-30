@@ -12,6 +12,7 @@ public class CtsVehicleADAS extends CommonActivity {
 
 	@Override
 	public void initializeData() {
+				
 		/**
 		 * id = 0
 		 */
@@ -89,7 +90,6 @@ public class CtsVehicleADAS extends CommonActivity {
 		mArrayList.add(new Element("ADAS Error Information can",
 				"" + mVehicleMgr.getADASInfoErrorStsByType(ADASErrorInfoType.CanSts)));
 		
-		
 		/**
 		 * id = 14
 		 */
@@ -162,10 +162,11 @@ public class CtsVehicleADAS extends CommonActivity {
 		@Override
 	    public void onVehicleADASCommandCodeStsChanged(VehicleManager.ADASCommandSts sts)
 	    {
-	    	Log.d(TAG, "onVehicleADASCommandCodeStsChanged value = " + sts);
 	    	Element e = mArrayList.get(1);
 	    	e.setmValue("" + sts);
 	    	notifyAdapter();
+	    	Log.d(TAG, "onVehicleADASCommandCodeStsChanged value = " + sts);
+
 	    }
 	    
 	    /**
@@ -177,10 +178,11 @@ public class CtsVehicleADAS extends CommonActivity {
 		@Override
 	    public void onVehicleADASReturnDataLengthChanged(int value)
 	    {
-	    	Log.d(TAG, "onADASReturnDataLengthChanged value=" + value);
 	    	Element e = mArrayList.get(2);
 	    	e.setmValue("" + value);
 	    	notifyAdapter();
+	    	Log.d(TAG, "onADASReturnDataLengthChanged value=" + value);
+
 	    }
 	    
 	    /**

@@ -269,6 +269,9 @@ public class CtsBattery extends Activity {
 			switch (v.getId()) {
 			case R.id.bat_get:
 				mArrayList.clear();
+				if (mBatMgr != null) {
+					mBatMgr.syncBatteryData();
+				}
 				initializeDataAdapter();
 				notifyAdapter();
 				break;

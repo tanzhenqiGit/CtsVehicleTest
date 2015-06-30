@@ -85,6 +85,9 @@ abstract public class CommonActivity extends Activity {
 		public void onClick(View v) {
 			switch (v.getId()) {
 			case R.id.vehicle_com_get:
+				if (mVehicleMgr != null) {
+				    mVehicleMgr.syncVehicleData();
+				}
 				onGetButtonClick();
 				break;
 			case R.id.vehicle_com_return:

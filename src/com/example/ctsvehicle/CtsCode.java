@@ -119,6 +119,9 @@ public class CtsCode extends Activity {
 			switch (v.getId()) {
 			case R.id.code_get:
 				mArrayList.clear();
+				if (mBatMgr != null) {
+					mBatMgr.syncBatteryData();
+				}
 				initializeData();
 				adapterNotify();
 				break;

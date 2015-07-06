@@ -31,6 +31,12 @@
 	        android:layout_width="@dimen/main_button_width"
 	        android:layout_height="@dimen/main_button_heigth"
 	        android:text="@string/vehicle" />
+	    
+	    <Button
+	        android:id="@+id/main_kill"
+	        android:layout_width="@dimen/main_button_width"
+	        android:layout_height="@dimen/main_button_heigth"
+	        android:text="@string/kill" />
 	</LinearLayout>
 
 	<Button

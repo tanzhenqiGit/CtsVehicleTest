@@ -26,7 +26,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         tools:ignore="DisableBaselineAlignment" >
 
@@ -81,36 +81,42 @@
 
             <Button
                 android:id="@+id/vehicle_light"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/light" />
 
             <Button
                 android:id="@+id/vehicle_adas"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/adas" />
 
             <Button
                 android:id="@+id/vehicle_temperature"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/temperature" />
 
             <Button
                 android:id="@+id/vehicle_aircondition"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/aircondition" />
 
             <Button
                 android:id="@+id/vehicle_oil"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/oil" />
 
             <Button
                 android:id="@+id/vehicle_saftbag"
+                android:layout_gravity="right"
                 android:layout_width="@dimen/main_button_width"
                 android:layout_height="@dimen/main_button_heigth"
                 android:text="@string/saftbag" />

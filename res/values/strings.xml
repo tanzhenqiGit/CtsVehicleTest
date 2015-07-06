@@ -9,6 +9,7 @@
     <string name="close">关闭</string>
     <string name="get">获取</string>
     <string name="ret">返回</string>
+    <string name="kill">挂掉</string>
     
     <string name="vin">vin码</string>
     <string name="gate">车门信息</string>
@@ -18,7 +19,7 @@
     <string name="window">车窗信息</string>
     <string name="mirror">后视镜信息</string>
     <string name="light">车灯信息</string>
-    <string name="adas">ADAS信息</string>   
+    <string name="adas">ADAS</string>   
     
      <string name="temperature">环境温度</string>
     <string name="aircondition">空调信息</string>

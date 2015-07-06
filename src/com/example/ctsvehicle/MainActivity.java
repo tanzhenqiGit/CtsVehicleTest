@@ -3,6 +3,7 @@ package com.example.ctsvehicle;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.vehicle.bat.BatManager;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -43,8 +44,12 @@ public class MainActivity extends Activity {
     	if (mClose != null) {
     		mClose.setOnClickListener(mListener);
     	}
+    	mKill = (Button)findViewById(R.id.main_kill);
+    	if (mKill != null) {
+    		mKill.setOnClickListener(mListener);
+    	}
     }
-    private Button mBat, mCode, mVehicle, mClose;
+    private Button mBat, mCode, mVehicle, mClose, mKill;
     private View.OnClickListener mListener = new OnClickListener() {
 		
 		@Override
@@ -67,6 +72,10 @@ public class MainActivity extends Activity {
 				Intent vehicle = new Intent(MainActivity.this, CtsVehicleMain.class);
 				startActivity(vehicle);
 				finish();
+				break;
+			case R.id.main_kill:
+				BatManager b = null;
+				b.addBatListener(null);
 				break;
 			default: break;
 			}
